@@ -1,0 +1,9 @@
+.navbar{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.form-label{
+    font-weight: bold;
+}
