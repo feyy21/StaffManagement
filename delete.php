@@ -1,18 +1,20 @@
 <?php
 include "connect.php";
 
-$id = $_GET['id'] ?? null;
+if (isset($_GET['id'])) {
+    $id = mysqli_real_escape_string($conn, $_GET['id']);
 
-if (!$id) {
-    echo "<script>alert('No student ID provided'); window.location.href='index.php';</script>";
-    exit;
-}
-
-$sql = "DELETE FROM students WHERE id = $id";
-
-if (mysqli_query($conn, $sql)) {
-    echo "<script>alert('Student deleted successfully'); window.location.href='index.php';</script>";
+    
+    $delete_sql = "DELETE FROM staff WHERE id = '$id'";
+    if (mysqli_query($conn, $delete_sql)) {
+        header("Location: index.php?message=Staff deleted successfully");
+        exit();
+    } else {
+        echo "Error deleting staff: " . mysqli_error($conn);
+    }
 } else {
-    echo "Error deleting record: " . mysqli_error($conn);
+    echo "Invalid request.";
 }
+
+mysqli_close($conn);
 ?>
