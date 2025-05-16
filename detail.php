@@ -32,52 +32,8 @@ if ($result && mysqli_num_rows($result) > 0) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="detail.css">
     <title>Staff Details</title>
-    <style>
-        .staff-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 700px;
-            margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .staff-avatar img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 80px;
-        }
-        .staff-info h2 {
-            margin: 0;
-            font-size: 24px;
-            color: #1a3c66;
-        }
-        .staff-info small {
-            color: #6c757d;
-        }
-        .staff-details p {
-            margin: 5px 0;
-            color: #1a3c66;
-        }
-        .staff-details i {
-            margin-right: 10px;
-            color: #6c757d;
-        }
-        .staff-actions a {
-            margin-left: 10px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-        .staff-actions .fa-pen {
-            color: #f4a261;
-        }
-        .staff-actions .fa-times {
-            color: #2c3e50;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-light justify-content-center fs-3 mb-5">

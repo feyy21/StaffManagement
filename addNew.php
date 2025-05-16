@@ -38,21 +38,21 @@ if (isset($_POST['submit'])) {
         <div class="text-center mb-3">
             <h2>Add New Staff Member</h2>
         </div>
-        <a href="index.php" class="btn btn-outline-success">Staff Table</a>
+        <!-- <a href="index.php" class="btn btn-outline-success ">Staff Table</a> -->
         <div class="container d-flex justify-content-center">
             <form action="" method="post" style="width:50vw; min-width:300px">
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <label for="full_name" class="form-label">Full Name</label>
                         <input type="text" class="form-control" name="full_name" placeholder="Full Name" required>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <label for="position" class="form-label">Position</label>
                         <input type="text" class="form-control" name="position" placeholder="Position" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <label for="department" class="form-label">Department</label>
                         <select class="form-control" name="department" required>
                             <option value="">Select Department</option>
@@ -62,23 +62,23 @@ if (isset($_POST['submit'])) {
                             <option value="Marketing">Marketing</option>
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <label for="phone" class="form-label">Phone</label>
                         <input type="text" class="form-control" name="phone" placeholder="Phone">
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <label for="hire_date" class="form-label">Hire Date</label>
                         <input type="date" class="form-control" name="hire_date" value="2025-05-14" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <label for="avatar_url" class="form-label">Avatar URL (optional)</label>
                         <input type="text" class="form-control" name="avatar_url" placeholder="https://example.com/avatar.jpg">
                     </div>

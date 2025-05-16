@@ -1,0 +1,28 @@
+.staff-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.staff-card:hover{
+    transform: translate(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.staff-info {
+    display: flex;
+    align-items: center;
+}
+.staff-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.staff-actions i {
+    margin-left: 10px;
+    cursor: pointer;
+}
