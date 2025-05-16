@@ -1,0 +1,9 @@
+CREATE TABLE `staff_archive` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `original_id` INT(11) NOT NULL,
+    `full_name` VARCHAR(255) NOT NULL,
+    `position` VARCHAR(255) DEFAULT NULL,
+    `avatar_url` VARCHAR(255) DEFAULT NULL,
+    `archived_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
