@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
             WHERE `id` = '$id'";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<script>alert('Staff member updated successfully'); window.location.href='index.php';</script>";
+        echo "<script>alert('Staff member updated successfully'); window.location.href='DataTable.php';</script>";
     } else {
         echo "Error: " . mysqli_error($conn);
     }
@@ -107,7 +107,7 @@ if (isset($_GET['id'])) {
                 </div>
                 <div>
                     <button type="submit" class="btn btn-primary" name="submit">Update Staff</button>
-                    <a href="index.php" class="btn btn-secondary">Cancel</a>
+                    <a href="Datatable.php" class="btn btn-secondary">Cancel</a>
                 </div>
             </form>
         </div>

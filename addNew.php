@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
             VALUES ('$full_name', '$position', '$department', '$email', '$phone', '2025-05-14', '$avatar_url', 1, NOW(), NOW())";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<script>alert('New staff member added successfully'); window.location.href='index.php';</script>";
+        echo "<script>alert('New staff member added successfully'); window.location.href='DataTable.php';</script>";
     } else {
         echo "Error: " . mysqli_error($conn);
     }
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div>
                     <button type="submit" class="btn btn-primary" name="submit">Add Staff</button>
-                    <a href="index.php" class="btn btn-secondary">Cancel</a>
+                    <a href="DataTable.php" class="btn btn-secondary">Cancel</a>
                 </div>
             </form>
         </div>

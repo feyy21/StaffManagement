@@ -31,7 +31,7 @@ include "connect.php";
         $result = mysqli_query($conn, $sql);
         if ($result && mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                $avatar_url = !empty($row['avatar_url']) ? $row['avatar_url'] : 'https://via.placeholder.com/40'; // Fallback avatar
+                $avatar_url = !empty($row['avatar_url']) ? $row['avatar_url'] : 'https://via.placeholder.com/40'; 
                 echo "
                 <div class='staff-card'>
                     <div class='staff-info'>

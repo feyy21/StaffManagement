@@ -57,7 +57,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                 </div>
                 <div class="staff-actions">
                     <a href="edit.php?id=<?php echo $staff['id']; ?>" class="text-decoration-none"><i class="fas fa-pen"></i></a>
-                    <a href="index.php?id=<?php echo $staff['id']; ?>" class="text-decoration-none"><i class="fas fa-times"></i></a>
+                    <a href="DataTable.php?id=<?php echo $staff['id']; ?>" class="text-decoration-none"><i class="fas fa-times"></i></a>
                 </div>
             </div>
         </div>
