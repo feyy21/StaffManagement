@@ -59,7 +59,7 @@ if (isset($_GET['id'])) {
         <div class="text-center mb-3">
             <h2>Edit Staff Member</h2>
         </div>
-        <!-- <a href="index.php" class="btn btn-outline-success">Staff Table</a> -->
+        <!-- <a href="DataTable.php" class="btn btn-outline-success">Staff Table</a> -->
         <div class="container d-flex justify-content-center">
             <form action="" method="post" style="width:50vw; min-width:300px">
                 <input type="hidden" name="id" value="<?php echo isset($staff) ? $staff['id'] : ''; ?>">

@@ -4,7 +4,7 @@ include "connect.php";
 $id = $_GET['id'] ?? null;
 
 if (!$id) {
-    echo "<script>alert('No staff ID provided'); window.location.href='index.php';</script>";
+    echo "<script>alert('No staff ID provided'); window.location.href='DataTable.php';</script>";
     exit;
 }
 
@@ -19,7 +19,7 @@ $result = mysqli_stmt_get_result($stmt);
 if ($result && mysqli_num_rows($result) > 0) {
     $staff = mysqli_fetch_assoc($result);
 } else {
-    echo "<script>alert('Staff member not found'); window.location.href='index.php';</script>";
+    echo "<script>alert('Staff member not found'); window.location.href='DataTable.php';</script>";
     exit;
 }
 ?>
