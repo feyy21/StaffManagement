@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
             WHERE `id` = '$id'";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<script>alert('Staff member updated successfully'); window.location.href='DataTable.php';</script>";
+        echo "<script>alert('Staff member updated successfully'); window.location.href='index.php';</script>";
     } else {
         echo "Error: " . mysqli_error($conn);
     }
@@ -59,7 +59,7 @@ if (isset($_GET['id'])) {
         <div class="text-center mb-3">
             <h2>Edit Staff Member</h2>
         </div>
-        <!-- <a href="DataTable.php" class="btn btn-outline-success">Staff Table</a> -->
+        <!-- <a href="index.php" class="btn btn-outline-success">Staff Table</a> -->
         <div class="container d-flex justify-content-center">
             <form action="" method="post" style="width:50vw; min-width:300px">
                 <input type="hidden" name="id" value="<?php echo isset($staff) ? $staff['id'] : ''; ?>">
@@ -99,15 +99,15 @@ if (isset($_GET['id'])) {
                         <input type="date" class="form-control" name="hire_date" value="<?php echo isset($staff) ? htmlspecialchars($staff['hire_date']) : date('Y-m-d'); ?>" required>
                     </div>
                 </div>
-                <div class="row mb-3">
+                <!-- <div class="row mb-3">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <label for="avatar_url" class="form-label">Avatar URL (optional)</label>
                         <input type="text" class="form-control" name="avatar_url" value="<?php echo isset($staff) ? htmlspecialchars($staff['avatar_url']) : ''; ?>" placeholder="https://example.com/avatar.jpg">
                     </div>
-                </div>
+                </div> -->
                 <div>
                     <button type="submit" class="btn btn-primary" name="submit">Update Staff</button>
-                    <a href="Datatable.php" class="btn btn-secondary">Cancel</a>
+                    <a href="index.php" class="btn btn-secondary">Cancel</a>
                 </div>
             </form>
         </div>
